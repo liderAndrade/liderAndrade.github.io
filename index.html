@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tablas</title>
+</head>
+<body>
+
+    <table ><!--No recomendado poner ese atributo-->
+        <caption>Mi horario de clases</caption>
+        <colgroup>
+            <col span="4">
+            <!--<col>
+            <col>
+            <col>-->
+            <col style="background: yellow">
+        </colgroup>
+        <thead><!--El encabezado debe estr en est etiqueta-->
+                <tr><!--Table row-->
+                    <th>Lunes</td><!--Table Heading-->
+                    <th>Martes</td>
+                    <th>Miercoles</td>
+                    <th>Jueves</td>
+                    <th>Viernes</td>     
+                </tr>     
+        </thead>
+        <tbody><!--Para colocar el cuerpo de la tabla-->
+            <tr><!--Table row-->
+                <td rowspan="2">HTML</td><!--Table Data-->
+                <td>PHP</td>
+                <td rowspan="2">JAVASCRIP</td>
+                <td>PYTHON</td>
+                <td>JAVA</td>     
+            </tr>
+            <tr><!--Table row-->
+                <td>Go</td>
+                <td>Big Data</td>
+                <td>Diseño</td>     
+            </tr>
+            <tr>
+                <td colspan="5">Recreo</td>
+            </tr>
+            <tr><!--Table row-->
+                <td>JAVA</td><!--Table Data-->
+                <td>SQL</td>
+                <td>RECT</td>
+                <td>PYTHON</td>
+                <td>PWA</td>     
+            </tr>
+        </tbody>
+        <tfoot ><!--para colocar conclusiones al pie de la tabla como la suma o el total-->
+            <tr>
+                <td>6 creditos</td>
+                <td>4 creditos</td>
+                <td>3 creditos</td>
+                <td>6 creditos</td>
+                <td>7 creditos</td>
+            </tr>
+        </tfoot>      
+    </table>
+
+</body>
+</html>
